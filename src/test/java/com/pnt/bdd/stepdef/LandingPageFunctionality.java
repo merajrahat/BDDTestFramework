@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class LandingPageFunctionality {
     private LandingPage landingPage;
 
-  /*  @Given("^user opens the browser and navigate to facebook\\.com$")
+    @Given("^user opens the browser and navigate to facebook\\.com$")
     public void user_opens_the_browser_and_navigate_to_facebook_com() {
         TestBase.setupBrowser();
         TestBase.driver.get("https://www.facebook.com");
@@ -30,12 +30,12 @@ public class LandingPageFunctionality {
 
         landingPage.clickOnLoginButton();
     }
-
+/*
     @Then("^user closes the browser$")
     public void user_closes_the_browser() {
 
         TestBase.driver.close();
-    }
+    }*/
 
     @Then("^user provides (.*) and (.*) in the desired field$")
     public void user_provides_username_and_password_in_the_desired_field(String username, String password){
@@ -56,6 +56,6 @@ public class LandingPageFunctionality {
 
         landingPage.validateErrorLoginMessage();
 
-    }*/
+    }
 
 }

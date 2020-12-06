@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-@CucumberOptions(features = {"src/test/java/com/pnt/bdd/features/"},
+@CucumberOptions(features = {"src/test/java/com/pnt/bdd/features/MyHomePagePractice.feature"},
         glue = {"com/pnt/bdd/stepdef"},
         tags = {"@Smoke"},
         //monochrome = false, // display the console output in readable format

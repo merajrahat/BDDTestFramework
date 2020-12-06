@@ -24,7 +24,7 @@ public class MyLandingPagePractice {
 
     public void validateAutoURL(){
         String currentUrl = TestBase.driver.getCurrentUrl();
-        String expectedURL = "https://slickdeals.net/deals/auto";
+        String expectedURL = "https://slickdeals.net/deals/auto/";
         Assert.assertTrue(currentUrl.contains(expectedURL));
     }
 
