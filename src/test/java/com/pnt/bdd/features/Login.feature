@@ -14,10 +14,9 @@ Feature: login functionality features
 
 
     Examples:
-    |username              | password  |
-    |testuser1@gmail.com   | 1234abc   |
-    |testuser2@gmail.com   | 1234abc   |
-
+      | username            | password |
+      | testuser1@gmail.com | 1234abc  |
+      | testuser2@gmail.com | 1234abc  |
 
 
   Scenario: user being able to click on login button from the footer of the landing page

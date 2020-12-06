@@ -16,13 +16,13 @@ public class MyLandingPagePractice {
 
     }
 
-    public void validateSlickdealsURL(){
+    public void validateSlickdealsURL() {
         String currentUrl = TestBase.driver.getCurrentUrl();
         String expectedURL = "https://slickdeals.net/";
         Assert.assertTrue(currentUrl.contains(expectedURL));
     }
 
-    public void validateAutoURL(){
+    public void validateAutoURL() {
         String currentUrl = TestBase.driver.getCurrentUrl();
         String expectedURL = "https://slickdeals.net/deals/auto/";
         Assert.assertTrue(currentUrl.contains(expectedURL));

@@ -38,9 +38,9 @@ public class LandingPageFunctionality {
     }*/
 
     @Then("^user provides (.*) and (.*) in the desired field$")
-    public void user_provides_username_and_password_in_the_desired_field(String username, String password){
+    public void user_provides_username_and_password_in_the_desired_field(String username, String password) {
 
-        landingPage.fillUserNameAndPasswordField(username,password);
+        landingPage.fillUserNameAndPasswordField(username, password);
 
     }
 

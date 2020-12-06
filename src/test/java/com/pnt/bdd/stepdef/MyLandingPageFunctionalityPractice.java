@@ -2,7 +2,6 @@ package com.pnt.bdd.stepdef;
 
 import com.pnt.bdd.TestBase;
 import com.pnt.bdd.pages.MyLandingPagePractice;
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -22,27 +21,27 @@ public class MyLandingPageFunctionalityPractice {
     }
 
     @When("^user sees the homepage$")
-    public void user_sees_the_homepage(){
+    public void user_sees_the_homepage() {
         myLandingPagePractice = PageFactory.initElements(TestBase.driver, MyLandingPagePractice.class);
         myLandingPagePractice.validateSlickdealsURL();
     }
 
     @Then("^user clicks on auto$")
-    public void user_clicks_on_auto(){
+    public void user_clicks_on_auto() {
         myLandingPagePractice = PageFactory.initElements(TestBase.driver, MyLandingPagePractice.class);
         myLandingPagePractice.userClickOnAuto();
 
     }
 
     @Then("^user sees auto deals$")
-    public void user_sees_auto_deals(){
+    public void user_sees_auto_deals() {
         myLandingPagePractice = PageFactory.initElements(TestBase.driver, MyLandingPagePractice.class);
         myLandingPagePractice.validateAutoURL();
 
     }
 
     @Then("^user closes the browser$")
-    public void user_closes_the_browser(){
+    public void user_closes_the_browser() {
         TestBase.driver.close();
 
     }
